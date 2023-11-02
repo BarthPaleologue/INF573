@@ -1,0 +1,11 @@
+Question 1: The image is in RGB format, therefore the 3 is to store the 3 color channels.
+Question 2: Y has dimension K * (U_1 - F_1 + 1) * (U_2 - F_2 + 1)
+Question 3: A laplacian filter is implemented. We therefore detect the edges in the image.
+Question 4: Non linearities are needed in CNN to make the model invariant to translation, rotation, etc. The non linearities are implemented by the activation functions.
+Tasks: W is performing edge detection. Adding a relu only selects right edges.
+Question 5: Max pooling downsampled the image quite a bit. It has been performed channel-wise and we can see there is not a lot of blue in the image (not surprising as it is an image of food).
+Question 6: There are 7 layers. The convolution kernels are of size 5x5, 5x5, 4x4, 2x2.
+Question 7: I can process around 1k image / second. Loss is the error between predictions and ground thruth, it is to be minimized. On the other hand, accuracy is the frequency of good predictions by the network, it is to be maximized.
+Task: the output is much too big than what was expected.
+Task: The quality of the prediction is basically non-existent. The network is not learning anything. The model have been overfitting all along.
+Task: Alexnet performs 5 convolutions.
